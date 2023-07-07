@@ -18,6 +18,11 @@ Python library to interact with the Odyssey momentum platform.
 
 ## Installation
 
+### Prerequisites
+
+ - Python 3.10 or 3.11
+ - x86_64 platform (for now, a c extension is used, not build for other platforms yet)
+
 ```console
 pip install --pre odyssey-momentum
 ```

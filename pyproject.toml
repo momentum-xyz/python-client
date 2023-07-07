@@ -205,9 +205,8 @@ now = true
 patterns = ["*.py", "pyproject.toml"]
 
 [tool.hatch.envs.default.env-vars]
-# temporary, until release
-PIP_INDEX_URL = "https://test.pypi.org/simple/"
-PIP_EXTRA_INDEX_URL = "https://pypi.org/simple/"
+#PIP_INDEX_URL = "https://test.pypi.org/simple/"
+#PIP_EXTRA_INDEX_URL = "https://pypi.org/simple/"
 
 [tool.hatch.metadata]
 allow-direct-references = true
