@@ -23,10 +23,14 @@ Python library to interact with the Odyssey momentum platform.
  - Python 3.10 or 3.11
  - x86_64 platform (for now, a c extension is used, not build for other platforms yet)
 
+The packages is available on PyPi:
+
 ```console
-pip install --pre odyssey-momentum
+pip install odyssey-momentum
 ```
-(*pre*, since it is still in development)
+
+(but recommended way is using a virtual environment or dependency management system)
+
 
 ## Usage
 
@@ -38,6 +42,7 @@ The python package contains 3 parts:
 
 Library is build around python async/await functionality, particulary async context managers and async generators.
 So needs to be used with either [asyncio](https://docs.python.org/3/library/asyncio.html) or [trio](https://trio.readthedocs.io/en/stable/).
+
 
 ### Example
 
@@ -71,7 +76,12 @@ async with posbus.connect(url, auth) as (send, stream):
     print(msg)
 ```
 
-See `examples` directory for more 
+See `examples` directory for more extensive examples.
+
+```console
+hatch shell
+./examples/run-bot.sh --help
+```
 
 
 ## Development
@@ -104,6 +114,7 @@ Build packages (outputs in `dist` directory:
 ```console
 hatch build
 ```
+
 
 ## License
 
